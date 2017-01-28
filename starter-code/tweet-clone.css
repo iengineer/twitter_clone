@@ -1,0 +1,90 @@
+body {
+    background-color: rgb(244, 248, 249);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#tweet {
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 5px solid rgb(255, 232, 237);
+    width: 850px;
+    height: 360px;
+    padding-left: 15px;
+}
+
+.profile_picture {
+    float: left;
+    padding: 20px;
+}
+
+/* Using realtive to change where it's sitting to where I want it.
+- added a top position value to meet the padding of the profile image
+- used neagtive margin to bring the twitter handle closer */
+.user_name {
+    position: relative;
+    top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: -8px;
+    
+}
+
+.user_name p {}
+
+.twitter_handle {
+    float: left;
+    position: relative;
+    top: -25px;
+    color: rgb(104, 109, 129);
+    font-size: 1.5em;
+}
+/* Removing float properties from the message so we can use precising positioning
+- it wants to float next to the profile image */
+
+.message_main {
+    clear:both;
+    position: relative;
+    top: -30px;
+    left: 20px;
+    
+}
+
+p.tweet_message {
+    font-size: 25px;
+}
+
+p.tweet_date {
+    color: rgb(101, 116, 127);
+    font-size: 23px;
+    margin-top: -15px
+}
+
+/* SOCIAL BUTTONS AND STUFF */
+
+.social_stuff {
+    position: relative;
+    left: 20px;
+    top: -30px;
+}
+
+.social_stuff span {
+    color: rgb(101, 116, 127);
+    font-size: 25px;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.social_stuff img {
+    padding-right: 30px
+}
+
+span.retweet_num {
+    position: relative;
+    left: -35px;
+    top: -3px;
+}
+span.favorite_num {
+    position: relative;
+    left: -35px;
+    top: -3px /* ninja stuff to align it properly I guess. */
+}
